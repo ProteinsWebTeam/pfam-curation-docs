@@ -23,7 +23,7 @@ If you use the directory pfam_data to download and build families, then the file
 will be preserved if you exit the container and re-run later. They will also be accessible from the host
 computer in the directory of that name.
 
-The command above should work on Linux-based machines and will permit applications such as belvue to
+The command above should work on Linux-based machines and will permit applications such as belvu to
 run correctly. On a Mac the command above will require some modification. If a workaround does not exist,
 it's possible to install and run these programs from the host computer. If you change to the pfam_data
 directory first it will be equivalent to running the command within the container.
