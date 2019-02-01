@@ -11,8 +11,8 @@ Contents:
 .. toctree::
    :maxdepth: 3
 
+   requirements
    preparation
    run
 
-.. requirements
 .. troubleshooting
