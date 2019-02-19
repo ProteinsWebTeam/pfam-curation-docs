@@ -63,6 +63,6 @@ or run the download script:
 
   bash download_pfamseq.sh
 
-If downloading manually you will need to move to the seqlib directory and uncompress.
+If downloading manually you will need to move the files to the seqlib directory and uncompress.
 
 
