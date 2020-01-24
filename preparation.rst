@@ -72,6 +72,7 @@ Troubleshooting
 If you see an error similar to this:
 
 .. code:: bash
+
   Temporary failure in name resolution: Unable to connect to a repository at URL 'https://xfamsvn.ebi.ac.uk/svn/pfam/trunk/Data/Families/PF00023' at /opt/Pfam/PfamLib/Bio/Pfam/SVN/Client.pm line 232
 
 This  means your Docker container is unable to access your network. To resolve the issue, you can 
