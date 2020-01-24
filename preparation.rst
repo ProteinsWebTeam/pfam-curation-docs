@@ -58,7 +58,8 @@ Also, create a pfam.conf file in the pfam_curation directory. You can use the `t
 
 Obtain the pfamseq (and, optionally) the uniprot fasta file. Either download the pfamseq.gz
 (and uniprot.gz) files from `Pfam ftp <ftp://ftp.ebi.ac.uk/pub/databases/Pfam/current_release>`_
-or run the download script:
+or run the `download_pfamseq.sh <https://gitlab.ebi.ac.uk/pfam/pfam-curation/download_pfamseq.sh>`_
+script.
 
 .. code:: bash
 
