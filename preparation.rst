@@ -75,28 +75,26 @@ If you see an error similar to this:
 
   Temporary failure in name resolution: Unable to connect to a repository at URL 'https://xfamsvn.ebi.ac.uk/svn/pfam/trunk/Data/Families/PF00023' at /opt/Pfam/PfamLib/Bio/Pfam/SVN/Client.pm line 232
 
-This  means your Docker container is unable to access your network. To resolve the issue, you can 
+This means your Docker container is unable to access your network. To resolve the issue, you can 
 either disable dnsmasq in NetworkManager, or specify a DNS server for Docker to use.
 
 To disable dnsmasq, comment out the dns line (dns=dnsmasq line -> #dns=dnsmasq) in 
-/etc/NetworkManager/NetworkManager.conf and then restart:
+/etc/NetworkManager/NetworkManager.conf and then restart the network-manager service:
 
 .. code:: bash
 
   sudo vi /etc/NetworkManager/NetworkManager.conf
   sudo service network-manager restart
 
-To specify a DNS server, you will need to add the DNS (provided by your university/institute) to 
-/etc/docker/daemon.json, and then restart docker:
-
-E.g. 
-{
-  "dns": ["x.y.z.w","8.8.8.8", "8.8.4.4"]
-}
+To specify a DNS server, add your network's DNS server to /etc/docker/daemon.json, and then 
+restart the docker service:
 
 .. code:: bash
 
   sudo vi /etc/docker/daemon.json 
   sudo service docker restart 
 
-
+An example DNS line is given below:
+{
+  "dns": ["10.0.0.2", "8.8.8.8"]
+}
