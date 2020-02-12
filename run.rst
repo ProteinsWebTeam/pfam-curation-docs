@@ -59,8 +59,8 @@ restart the docker service:
 
 An example DNS line is given below:
 
-.. code::bash
+.. math::
 
-  {
+  \{
     "dns": ["10.0.0.2", "8.8.8.8"]
-  }
+  \}
