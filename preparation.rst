@@ -67,7 +67,7 @@ script.
 
 If downloading manually you will need to move the files to the seqlib directory and uncompress.
 
-In the directory avove pfam_curation directory, get a checkout of the Pfam dictionary:
+In the directory above pfam_curation directory, get a checkout of the Pfam dictionary:
 
 .. code:: bash
 
