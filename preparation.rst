@@ -28,7 +28,7 @@ and add docker if that does not appear in the output above.
 Download docker image
 ---------------------
 
-Download the latest version of the Pfam curation tools container from Gitlab:
+Download the latest version of the Pfam curation tools container from Dockerhub:
 
 .. parsed-literal::
 
